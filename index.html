@@ -23,28 +23,12 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"  /> -->
 
     <link rel="stylesheet" href="styles/main.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"  /> -->
     <link rel="stylesheet" href="styles/fonts.css">
 </head>
 <body class="bg-gray-100 container-xl">
-    <header style="display: none;">
-        <nav>
-            <a href="#">
-                <img src="images/clustter-logo.png" alt="" class="logo">
-            </a>
-            <button class="join ">Join the waitlist</button>
-            <h1 class="text-3xl font-bold underline text-clifford">
-                Hello world!
-              </h1>
-        </nav>
-
-        <div class="hero">
-
-        </div>
-    </header>
-
     <section class="md:w-4/5 mx-auto">
         <header class="z-50">
           <nav class="flex items-center justify-space p-6 lg:px-8" aria-label="Clustter">
@@ -111,154 +95,52 @@
                 <p class="text-2xl leading-8 text-gray-600">Making your migrant experience more memorable.</p>
               </div>
 
-              <div class="sm:flex sm:justify-center my-10 shadow-2xl">
+              <!-- <div class="sm:flex sm:justify-center my-10 shadow-2xl">
                 <div class="slider w-full h-[600px] flex flex-coll justify-center items-end pb-8">
                   <a href="#" class="bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-5 py-4 rounded-md uppercase">Join the waitlist <span aria-hidden="true">&rarr;</span></a>
-                </div>
-                
-              </div>
+                </div>                
+              </div> -->
             </div>
           </div>          
         </div>
 
     </section>
+    <!-- bg-gradients allows controls to add as many stop colors as against opacity-n and solid bg -->
+    <!-- bg-gradient-to-r from-[#15234770] via-[] to-[#15234770] -->
 
-    <!-- carousel hidden -->
-    <div id="carouselExampleCaptions" class="relative hidden" data-te-carousel-init data-te-carousel-slide>
-      <!--Carousel indicators-->
-      <div
-        class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-        data-te-carousel-indicators>
-        <button
-          type="button"
-          data-te-target="#carouselExampleCaptions"
-          data-te-slide-to="0"
-          data-te-carousel-active
-          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-          aria-current="true"
-          aria-label="Slide 1"></button>
-        <button
-          type="button"
-          data-te-target="#carouselExampleCaptions"
-          data-te-slide-to="1"
-          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-          aria-label="Slide 2"></button>
-        <button
-          type="button"
-          data-te-target="#carouselExampleCaptions"
-          data-te-slide-to="2"
-          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-          aria-label="Slide 3"></button>
-      </div>
-
+    <div id="carouselExampleSlidesOnly" class="relative w-4/5 mx-auto" data-te-carousel-init data-te-carousel-slide>
       <!--Carousel items-->
       <div
         class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        
         <!--First item-->
-        <div
-          class="relative bg-blue-200 h-[700px] float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-te-carousel-active
-          data-te-carousel-item
-          style="backface-visibility: hidden">
-          <img
-            src="images/hero-1.png"
-            class="block w-full mt-[-20%] bg-blue-300"
-            alt="..." />
-          <div
-            class="absolute bg-gradient-to-r from-transparent via-clustterBlue to-transparent inset-x-[10%] bottom-[10%] hidden py-6 text-center text-white md:block">
-            <h5 class="text-6xl">From day zero, <br> to day citizenship</h5>
-            <p class="text-2xl">Making your migrant experience more memorable.</p>
-          </div>
-        </div>
+        <div 
+          class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item data-te-carousel-active
+        >
+          <a href="#" class="absolute bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-5 py-4 rounded-md uppercase" style="left: calc(50% - 85px); bottom: 10%;">Join the waitlist <span aria-hidden="true">&rarr;</span>
+          </a>
+          <img src="images/hero-1.png" class="block w-full rounded-lg" alt="" />
 
+        </div>
         <!--Second item-->
         <div
-          class="relative bg-blue-200 h-[700px] float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-te-carousel-active
-          data-te-carousel-item
-          style="backface-visibility: hidden">
-          <img
-            src="images/solo-traveler.png"
-            class="block w-full mt-[-20%] bg-blue-300"
-            alt="..." />
-          <div
-            class="absolute bg-gradient-to-r from-transparent via-clustterBlue to-transparent inset-x-[10%] bottom-[10%] hidden py-6 text-center text-white md:block">
-            <h5 class="text-6xl">From day zero, <br> to day citizenship</h5>
-            <p class="text-2xl">Making your migrant experience more memorable.</p>
-          </div>
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <a href="#" class="absolute bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-5 py-4 rounded-md uppercase" style="left: calc(50% - 85px); bottom: 10%;">Join the waitlist <span aria-hidden="true">&rarr;</span>
+          </a>
+          <img src="images/solo-traveler.png" class="block w-full rounded-lg" alt="Solo traveler" />
         </div>
-
         <!--Third item-->
         <div
-          class="relative bg-blue-200 h-[700px] float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-te-carousel-active
-          data-te-carousel-item
-          style="backface-visibility: hidden">
-          <img
-            src="images/hero-1.png"
-            class="block w-full mt-[-20%] bg-blue-300"
-            alt="..." />
-          <div
-            class="absolute bg-gradient-to-r from-transparent via-clustterBlue to-transparent inset-x-[10%] bottom-[10%] hidden py-6 text-center text-white md:block">
-            <h5 class="text-6xl">From day zero, <br> to day citizenship</h5>
-            <p class="text-2xl">Making your migrant experience more memorable.</p>
-          </div>
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <a href="#" class="absolute bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-5 py-4 rounded-md uppercase" style="left: calc(50% - 85px); bottom: 10%;">Join the waitlist <span aria-hidden="true">&rarr;</span>
+          </a>
+          <img src="images/pexels-oleksandr-pidvalnyi-1008155.jpg" class="block w-full rounded-lg" alt="Traveler" />
         </div>
-        
-      </div><!--Carousel items-->
-
-      <!--Carousel controls - prev item-->
-      <button
-        class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-        type="button"
-        data-te-target="#carouselExampleCaptions"
-        data-te-slide="prev">
-        <span class="inline-block h-8 w-8">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="h-6 w-6">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 19.5L8.25 12l7.5-7.5" />
-          </svg>
-        </span>
-        <span
-          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-          >Previous</span
-        >
-      </button>
-      <!--Carousel controls - next item-->
-      <button
-        class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-        type="button"
-        data-te-target="#carouselExampleCaptions"
-        data-te-slide="next">
-        <span class="inline-block h-8 w-8">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="h-6 w-6">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-        </span>
-        <span
-          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-          >Next</span
-        >
-      </button>
+      </div>
     </div>
-
 
     <section class="bg-clustterMilk py-40">
       <div class="md:w-4/5 mx-auto px-10 md:px-0 md:flex">
@@ -448,19 +330,19 @@
           <p>© Clustter Technology Ltd. 2023</p>
           <div class="flex gap-x-6">
             <a href="#">
-              <img src="images/facebook.svg.png" alt="" class="h-[20px]">
+              <img src="images/facebook.svg.png" alt="" class="h-[16px]">
             </a>
             <a href="#">
-              <img src="images/instagram.svg.png" alt="" class="h-[20px]">
+              <img src="images/instagram.svg.png" alt="" class="h-[16px]">
             </a>
             <a href="#">
-              <img src="images/twitter.svg.png" alt="" class="h-[20px]">
+              <img src="images/twitter.svg.png" alt="" class="h-[16px]">
             </a>
             <a href="#">
-              <img src="images/linkedin.svg.png" alt="" class="h-[20px]">
+              <img src="images/linkedin.svg.png" alt="" class="h-[16px]">
             </a>
             <a href="#">
-              <img src="images/youtube.svg.png" alt="" class="h-[20px]">
+              <img src="images/youtube.svg.png" alt="" class="h-[16px]">
             </a>
           </div>
         </div>
@@ -526,7 +408,7 @@
       
     </script>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     
 </body>
 </html>
