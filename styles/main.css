@@ -1,0 +1,82 @@
+:root {
+    --animate-delay: 0.5s;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+}
+
+.slider {
+    background-image: url('../images/hero-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.smiling-woman {
+    background-image: url('../images/smiling-woman.jpg');
+    background-repeat: no-repeat;
+    background-size: 175%;
+    background-position: top center;
+}
+.chalk-line {
+    background-image: url('../images/chalk-line.png');
+    background-repeat: no-repeat;
+    background-size:25%;
+    background-position: bottom right;
+}
+
+.bridge-walk {
+    background-image: url('../images/bridge-walk.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c_animate__sitted {
+    animation: sitted 1s ease-in;
+}
+.c_animate__rotate30 {
+    animation: rotate30 1s .5s ease-in;
+}
+
+@keyframes sitted {
+    0% {
+        transform: translateY(-0);
+    }
+    30% {
+        transform: translateY(-75px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate30 {
+    0% {
+        transform: rotate(10deg);
+    }
+    
+    30% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+.c_animate__reveal {
+    animation: reveal 1s
+}
+
+@keyframes reveal {
+    0% {
+        transform: translateX(-50%)
+    }
+    100% {
+        transform: translateX(0%)
+    }
+}
