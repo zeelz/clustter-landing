@@ -4,7 +4,15 @@
   font-weight: normal;
 }
 
-h1, h2 {
+@font-face {
   font-family: 'Almarena';
-  /* font-weight: lighter; */
+  src: url('../fonts/AlmarenaDisplayBold.otf') format('opentype');
+  font-weight: bold;
 }
+
+h1,h2 {
+  font-family: 'Almarena';
+}
+
+h1 {font-weight: normal;}
+h2 {font-weight: bold;}
