@@ -80,3 +80,23 @@
         transform: translateX(0%)
     }
 }
+
+.stacked-cards {
+    bottom: 0px;
+    left: 0%;
+    transform: rotate(30deg);
+}
+
+.slider-join{
+    /* left: calc(25% - 77px); */
+    left: 25%;
+    bottom: 10%;
+}
+
+@media(min-width: 768px){
+    .stacked-cards {bottom: -50px;}
+    
+    .slider-join{
+        left: calc(50% - 85px);
+    }
+}

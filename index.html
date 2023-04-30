@@ -40,7 +40,7 @@
               </a>
             </div>
 
-            <div class="flex lg:hidden">
+            <div class="flex hidden">
               <button id="hamburger" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                 <span class="sr-only">Open main menu</span>
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -49,17 +49,16 @@
               </button>
             </div>
 
-            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="#" class="bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-5 py-4 rounded-md uppercase">Join the waitlist <span aria-hidden="true">&rarr;</span></a>
+            <div class="flex flex-1 justify-end">
+              <a href="#" class="bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-3 py-2 md:px-5 md:py-4 rounded-md uppercase">Join the waitlist <span aria-hidden="true">&rarr;</span></a>
             </div>
 
           </nav>
 
           <!-- Mobile menu, show/hide based on menu open state. -->
-          <div id="menuHandle" class="hidden" role="dialog" aria-modal="true">
-            <!-- Background backdrop, show/hide based on slide-over state. -->
-            <!-- <div class="fixed inset-0 z-40"></div> -->
-
+          <!-- <div id="menuHandle" class="hidden" role="dialog" aria-modal="true">
+            
+            Background backdrop, show/hide based on slide-over state.
             <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <div class="flex items-center justify-between">
                 <a href="#" class="-m-1.5 p-1.5">
@@ -84,20 +83,21 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
+          
         </header>
       
         <div class="relative isolate mb-8">
-          <div class="mt-20">
+          <div class="mt-10 sm:mt-20">
             <div class="text-center">
-              <h1 class="animate__animated heading text-6xl text-center tracking-tight text-gray-900 sm:text-8xl" style="line-height: 0.9;">From day zero, <br> to day citizenship</h1>
+              <h1 class="animate__animated heading text-center tracking-tight text-gray-900 text-5xl sm:text-8xl" style="line-height: 0.9;">From day zero, <br> to day citizenship</h1>
               <div class="md:mx-[20%]">
-                <p class="text-2xl leading-8 text-gray-600">Making your migrant experience more memorable.</p>
+                <p class="sm:text-2xl leading-8 text-gray-600">Making your migrant experience more memorable.</p>
               </div>
 
               <!-- <div class="sm:flex sm:justify-center my-10 shadow-2xl">
                 <div class="slider w-full h-[600px] flex flex-coll justify-center items-end pb-8">
-                  <a href="#" class="bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-5 py-4 rounded-md uppercase">Join the waitlist <span aria-hidden="true">&rarr;</span></a>
+                  <a href="#" class="bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-3 py-2 md:px-5 md:py-4 rounded-md uppercase">Join the waitlist <span aria-hidden="true">&rarr;</span></a>
                 </div>                
               </div> -->
             </div>
@@ -115,42 +115,48 @@
         
         <!--First item-->
         <div 
-          class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          class="relative float-left -mr-[100%] w-full h-[300px] md:h-auto transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item data-te-carousel-active
         >
-          <a href="#" class="absolute bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-5 py-4 rounded-md uppercase" style="left: calc(50% - 85px); bottom: 10%;">Join the waitlist <span aria-hidden="true">&rarr;</span>
+          <a href="#" class="absolute bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-3 py-2 md:px-5 md:py-4 rounded-md uppercase slider-join">Join the waitlist <span aria-hidden="true">&rarr;</span>
           </a>
-          <img src="images/hero-1.png" class="block w-full rounded-lg" alt="" />
+          <img src="images/hero-1.png" class="block ml-[-100%] md:ml-0 w-auto md:w-full h-[300px] max-w-[initial] md:h-auto rounded-lg" alt="" />
 
         </div>
         <!--Second item-->
         <div
-          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          class="relative float-left -mr-[100%] hidden w-full h-[300px] md:h-auto transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
-          <a href="#" class="absolute bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-5 py-4 rounded-md uppercase" style="left: calc(50% - 85px); bottom: 10%;">Join the waitlist <span aria-hidden="true">&rarr;</span>
+          <a href="#" class="absolute bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-3 py-2 md:px-5 md:py-4 rounded-md uppercase slider-join">Join the waitlist <span aria-hidden="true">&rarr;</span>
           </a>
-          <img src="images/solo-traveler.png" class="block w-full rounded-lg" alt="Solo traveler" />
+          <img src="images/solo-traveler.png" class="block ml-[-100%] md:ml-0 w-auto md:w-full h-[300px] max-w-[initial] md:h-auto rounded-lg" alt="Solo traveler" />
         </div>
         <!--Third item-->
         <div
-          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          class="relative float-left -mr-[100%] hidden w-full h-[300px] md:h-auto transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
-          <a href="#" class="absolute bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-5 py-4 rounded-md uppercase" style="left: calc(50% - 85px); bottom: 10%;">Join the waitlist <span aria-hidden="true">&rarr;</span>
+          <a href="#" class="absolute bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-3 py-2 md:px-5 md:py-4 rounded-md uppercase slider-join">Join the waitlist <span aria-hidden="true">&rarr;</span>
           </a>
-          <img src="images/pexels-oleksandr-pidvalnyi-1008155.png" class="block w-full rounded-lg" alt="Traveler" />
+          <img src="images/pexels-oleksandr-pidvalnyi-1008155.png" class="block ml-[-100%] md:ml-0 w-auto md:w-full h-[300px] max-w-[initial] md:h-auto rounded-lg" alt="Traveler" />
         </div>
+        <!-- <div
+          class="relative float-left -mr-[100%] hidden md:w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <a href="#" class="absolute bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-3 py-2 md:px-5 md:py-4 rounded-md uppercase slider-join">Join the waitlist <span aria-hidden="true">&rarr;</span>
+          </a>
+          <img src="images/pexels-oleksandr-pidvalnyi-1008155.png" class="block ml-[-25%] md:ml-0 w-full rounded-lg" alt="Traveler" />
+        </div> -->
       </div>
     </div>
 
-    <section class="bg-clustterMilk py-40 relative">
+    <section class="bg-clustterMilk py-10 md:py-40 relative">
       <div class="md:w-4/5 mx-auto px-10 md:px-0 md:flex justify-between">
-        <div class="md:w-[50%] flex flex-col justify-center px-16">
-          <h2 class="animate__animated heading text-left text-6xl">Arrive ready, <br>
-            receive money from anywhere.</h2>
-            <p class="text-xl pt-3">Fast, secure and hassle-free account set up process enabling migrants to receive money, quickly and easily.</p>
+        <div class="md:w-[50%] flex flex-col justify-center md:px-16">
+          <h2 class="animate__animated heading text-left text-4xl sm:text-6xl">Arrive ready, <br> receive money from anywhere.</h2>
+            <p class="md:md:text-xl pt-3">Fast, secure and hassle-free account set up process enabling migrants to receive money, quickly and easily.</p>
         </div>
 
-        <div class="md:w-2/5 relative h-[600px] z-40 mr-16">
+        <div class="md:w-2/5 relative h-[300px] md:h-[600px] z-40 mt-5 md:mt-0 :mr-16">
           <div class="smiling-woman h-full animate__animated"></div>
           
 
@@ -158,29 +164,29 @@
         </div>
       </div>
       
-      <img src="images/wired-logo.png" class="w-[400px] h-[400px] absolute z-40 mr-10" style="right: 0%; bottom: 0%;">
-      <div class="w-[500px] h-[400px] bg-blue-200 absolute" style="bottom: 0; right:0;"></div>
+      <img src="images/wired-logo.png" class="w-[150px] md:w-[400px] md:h-[400px] absolute z-40 md:mr-10" style="right: 0; bottom: 0%;">
+      <div class="w-[500px] h-[300px] md:h-[400px] bg-blue-200 absolute" style="bottom: 0; right:0;"></div>
           
     </section>
 
     
-    <section class="py-40">
+    <section class="py-20 md:py-40">
       <div class="md:w-4/5 mx-auto px-10 md:px-0 md:flex">
 
-        <div class="md:w-[50%] flex justify-center items-center">
-          <div class="relative w-[400px] h-[600px]">
+        <div class=" md:w-[50%] flex justify-center items-center">
+          <div class="relative w-[200px] md:w-[400px] h-[400px] md:h-[600px]">
             <img src="images/passport.png" alt="" class=" absolute animate__animated passport" style="bottom: 0; right: -28%;">
-            <img src="images/clustter-app.png" alt="" class="h-[600px] absolute" style="bottom: 0; left: 0;">
+            <img src="images/clustter-app.png" alt="" class="w-[200px] md:w-auto md:h-[600px] absolute" style="bottom: 0; left: 0;">
             <img src="images/travel-box.png" alt="" class="absolute animate__animated travel-box" style="bottom: 0; right: 60%">
           </div>
           
         </div>
 
-        <div class="md:w-[50%] flex justify-center items-center md:px-20">
+        <div class="md:w-[50%] flex justify-center items-center pt-5 md:pt-0 md:px-20">
           <div>
-            <h2 class="animate__animated heading text-6xl inline chalk-line">Move in easy with our easyrent solutions.</h2>
+            <h2 class="animate__animated heading text-4xl sm:text-6xl inline chalk-line">Move in easy with our easyrent solutions.</h2>
             
-            <p class="text-xl pt-3">Clustter takes the stress out of renting for migrants, 
+            <p class="md:text-xl pt-3">Clustter takes the stress out of renting for migrants, 
               with easy payment options and a guarantorship service 
               at your fingertips.</p>
           </div>          
@@ -189,41 +195,42 @@
     </section>
 
 
-    <section class="py-20">
+    <section class="py-10 md:py-20">
       <div class="md:w-4/5 mx-auto px-10 md:px-0 md:flex gap-x-20">
 
-        <div class="md:w-[50%] flex flex-col justify-center items-start">
+        <div class="md:w-[50%] flex justify-center items-center pb-5 order-2">
+          <img src="images/flags.png" alt="" class="w-1/2 animate__animated flags">
+        </div>
+
+        <div class="md:w-[50%] flex flex-col justify-center items-start order-1">
           <div>
-            <h2 class="animate__animated heading text-6xl">Zero-fee multi-currency money transfer globally.</h2>
+            <h2 class="animate__animated heading text-4xl sm:text-6xl text-center md:text-left">Zero-fee multi-currency money transfer globally.</h2>
             
-            <p class="text-xl pt-3">Enjoy fast and reliable cross border, multi
+            <p class="md:text-xl pt-3 text-center md:text-left">Enjoy fast and reliable cross border, multi
               currency transfer that’s 60% cheaper.</p>
           </div>
-          <div class="py-6">
-            <a href="#" class="bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-5 py-4 rounded-md uppercase">Join the waitlist <span aria-hidden="true">&rarr;</span></a>
+          <div class="py-6 flex w-full justify-center md:justify-start">
+            <a href="#" class="bg-clustterBlue text-xs font-semibold leading-6 text-clustterTorquoise px-3 py-2 md:px-5 md:py-4 rounded-md uppercase">Join the waitlist <span aria-hidden="true">&rarr;</span></a>
           </div>       
         </div>
 
-        <div class="md:w-[50%] flex justify-center items-center">
-          <img src="images/flags.png" alt="" class="w-1/2 animate__animated flags">
-        </div>
       </div>
     </section>
 
 
-    <section class="py-40">
+    <section class="py-10 md:py-40">
       <div class="md:w-4/5 mx-auto md:flex">
 
-        <div class="md:w-[50%] flex justify-center items-center">
-          <div class="relative bg-red-300 p-20">
-            <img src="images/phone.png" alt="phone mockup" class="h-[600px]" height="">
-            <img src="images/card-stack.png" alt="stack of cards" class="absolute h-[500px] animate__animated stacked-cards" style="bottom: -50px; left: 0%; transform: rotate(30deg)">
+        <div class="md:w-[50%] flex justify-center items-center bg-red-300 md:bg-transparent mb-10 md:mb-0">
+          <div class="relative bg-red-300 md:p-20">
+            <img src="images/phone.png" alt="phone mockup" class="h-[400px] md:h-[600px]" height="">
+            <img src="images/card-stack.png" alt="stack of cards" class="absolute md:h-[500px] animate__animated stacked-cards">
           </div>
         </div>
 
         <div class="md:w-[50%] flex justify-center items-center md:px-20">
-          <div>
-            <h2 class="animate__animated heading text-6xl">Innovative credit products designed for migrants.</h2>
+          <div class="p-10 md:p-0">
+            <h2 class="animate__animated heading text-4xl sm:text-6xl">Innovative credit products designed for migrants.</h2>
             <div class="mt-10">
               <div class="flex items-start gap-x-8 mb-8">
                 <div class="flex-shrink-0">
@@ -231,9 +238,7 @@
                 </div>
                 <div>
                   <p class="text-gray-600 pb-1">Expenses Management</p>
-                  <p class="text-gray-500 text-sm ">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Suspendisse varius enim in
-                    eros elementum</p>
+                  <p class="text-gray-500 text-sm ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum</p>
                 </div>
               </div>
               
@@ -266,20 +271,20 @@
       </div>
     </section>
 
-    <section class="py-20">
+    <section class="py-10 md:py-20">
       <div class="md:w-4/5 mx-auto">
 
-        <div class="relative animate__animated bridge-walk h-[600px] mb-10">
-          <img src="images/app-mockup.png" alt="stack of cards" class="animate__animated app-mockup absolute h-[650px]" style="bottom: 0px; right: 5%;">
+        <div class="relative animate__animated bridge-walk h-[300px] md:h-[600px] mb-10">
+          <img src="images/app-mockup.png" alt="stack of cards" class="animate__animated app-mockup absolute h-[330px] md:h-[650px]" style="bottom: 0px; right: 5%;">
         </div>
-        <div class="text-gray-600 text-center w-1/2 mx-auto mt-20 mb-10">
+        <div class="text-gray-600 text-center md:w-1/2 px-10 md:px-0 mx-auto mt-5 md:mt-20 mb-10">
           <p class="text-xl leading-8">Designed with community at heart.</p>
-          <h1 class="animate__animated heading text-6xl font-normal text-clustterBlue my-4">Designed to help you thrive seamlessly.</h1>
+          <h1 class="animate__animated heading text-4xl sm:text-6xl font-normal text-clustterBlue my-4">Designed to help you thrive seamlessly.</h1>
           <p class="text-xl">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus.</p>
 
         </div>
         <div class="text-center">
-          <a href="#" class="bg-blue-300 px-5 py-4 rounded-md">Learn more <span aria-hidden="true">&rarr;</span></a>
+          <a href="#" class="bg-blue-300 px-3 py-2 md:px-5 md:py-4 rounded-md">Learn more <span aria-hidden="true">&rarr;</span></a>
         </div>
 
 
@@ -287,36 +292,35 @@
       
     </section>
       
-    <section class="py-40">
-      <div class="md:w-4/5 mx-auto px-10 md:px-0 md:flex bg-clustterBlue">
+    <section class="py-10 md:py-40">
+      <div class="md:w-4/5 mx-auto pt-10 md:pt-0 px-10 md:px-0 md:flex bg-clustterBlue">
 
         <div class="md:w-[50%] flex justify-center items-center md:px-20">
           <div>
-            <h2 class="text-6xl inline text-white chalk-line">Use our community advisory <span class="text-clustterTorquoise">for free</span>.</h2>
+            <h2 class="text-4xl sm:text-6xl inline text-white chalk-line">Use our community advisory <span class="text-clustterTorquoise">for free</span>.</h2>
             
-            <p class="text-xl pt-3 text-slate-500">Clustter takes the stress out of renting for migrants, 
-                  with easy payment options and a guarantorship service.</p>
+            <p class="md:text-xl pt-3 text-slate-500">Clustter takes the stress out of renting for migrants, with easy payment options and a guarantorship service.</p>
 
             <div class="pt-8">
-              <a href="#" class="bg-clustterTorquoise px-5 py-4 rounded-md">Learn more <span aria-hidden="true">&rarr;</span></a>
+              <a href="#" class="bg-clustterTorquoise px-3 py-2 md:px-5 md:py-4 rounded-md">Learn more <span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>          
         </div>
 
         <div class="md:w-[50%] flex justify-center items-center">
-          <img src="images/app-faces.png" alt="" class="w-3/4 m-8 animate__animated app-faces">
+          <img src="images/app-faces.png" alt="" class="md:w-3/4 pb-10 md:pb-0 md:m-8 animate__animated app-faces">
         </div>
       </div>
     </section>
 
-    <section class="bg-[#E3E3E3] py-20">
-      <div class="w-4/5 mx-auto text-gray-500 ">
-        <div class="flex">
+    <section class=" bg-[#E3E3E3] py-20">
+      <div class="md:w-4/5 px-10 md:px-0 mx-auto text-gray-500 ">
+        <div class="md:flex">
           <div>
             <div>
               <img src="images/clustter-icon.png" alt="" class="w-[50px]">
             </div>
-            <p class="w-1/2 pt-8">Clustter is a community-driven migrant app designed to provide financial solutions and support services to help migrants, international students, and expats thrive in their new countries.</p>
+            <p class="md:w-1/2 pt-8">Clustter is a community-driven migrant app designed to provide financial solutions and support services to help migrants, international students, and expats thrive in their new countries.</p>
           </div>
           <div class="flex items-start flex-shrink-0">
             <a href="#">
@@ -328,9 +332,8 @@
             
           </div>
         </div>
-        <div class="flex justify-between pt-10">
-          <p>© Clustter Technology Ltd. 2023</p>
-          <div class="flex gap-x-6">
+        <div class="md:flex justify-between pt-10">
+          <div class="flex md:gap-x-6 justify-between order-2">
             <a href="#">
               <img src="images/facebook.svg.png" alt="" class="h-[16px]">
             </a>
@@ -347,19 +350,20 @@
               <img src="images/youtube.svg.png" alt="" class="h-[16px]">
             </a>
           </div>
+          <p class="text-center md:text-left mt-10 md:mt-0 order-1">© Clustter Technology Ltd. 2023</p>
         </div>
       </div>
     </section>
-      
-    <script>
+    
+    <!-- open/close menu -->
+    <!-- <script>
       const menuHandle = document.querySelector('#menuHandle')
       const hamburger = document.querySelector('#hamburger')
       const closeMenu = document.querySelector('#closeMenu')
 
       hamburger.onclick = () => menuHandle.classList.remove('hidden')
       closeMenu.onclick = () => menuHandle.classList.add('hidden')
-
-    </script>
+    </script> -->
 
     <script src="js/anime.min.js"></script>
     <script>
